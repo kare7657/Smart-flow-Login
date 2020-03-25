@@ -1,0 +1,114 @@
+body{
+    height: 100vh;
+    font-family: 'Noto Sans TC', sans-serif,'微軟正黑體';
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/1920-gray.jpg);
+    background-size: cover;  
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;    
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    
+}
+h3{
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: 0.7px;
+    text-align: center;
+    color: #231815;
+    font-weight: normal;
+    margin: 10px 0;
+}
+a{
+    text-decoration: none;
+    color: #6779B4;
+}
+a:hover{
+    color: #000;
+}
+
+.login-body{
+    width: 635px;
+    min-width: 260px;
+    background-color: #fff;    
+    border-radius: 25px;
+    margin: 40px 0;
+}
+.login-group{
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 80px 140px;
+    text-align: center;
+    
+}
+.login-top{    
+    justify-content: center;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    
+}
+.login-bot{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+}
+input{
+    width: 300px;
+    height: 30px;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #DCDCDD;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+input:focus {
+    border-color: #92A3D3;
+    transition: 0.5s;
+}
+.btn{
+    width: 300px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 30px;    
+    font-size: 16px;
+    line-height: 40px;
+    color: #fff;
+    font-weight: normal;
+    margin: 24px 0 15px 0;
+}
+.btn:hover{
+    background-color: #6779B4;
+    transition: 0.3s;
+}
+.forget{
+    width: 100%;
+    text-align: right;
+    margin-right: 30px;
+}
+.footer{
+    width: 100%;
+    min-width: 260px;
+    padding: 15px 0;
+    background-color: #727171;
+}
+.footer p{
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+}
+.footer-p-M{
+    display: none;
+}
