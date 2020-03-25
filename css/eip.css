@@ -3,7 +3,7 @@ body{
     font-family: 'Noto Sans TC', sans-serif,'微軟正黑體';
     margin: 0;
     padding: 0;
-    background-image: url(../img/1920-gray.jpg);
+    background-image: url("../img/1920-gray.jpg");
     background-size: cover;  
     background-position: center;
     background-repeat: no-repeat;
