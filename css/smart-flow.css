@@ -3,7 +3,7 @@ body{
     font-family: 'Noto Sans TC', sans-serif,'微軟正黑體';
     margin: 0;
     padding: 0;
-    background-color: #DAEDF7;
+    background-image: url("../img/1920-gray.jpg");
     background-size: cover;  
     background-position: center;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ h3{
     text-align: center;
     color: #231815;
     font-weight: normal;
-    margin: 15px 0 50px 0;
+    margin: 10px 0;
 }
 a{
     text-decoration: none;
@@ -31,27 +31,19 @@ a:hover{
 }
 
 .login-body{
-    width: 1015px;    
-    min-width: 320px;
-    background-color: #fff; 
-    margin-top: 30px;
-    display: flex;    
-    align-items: center;
+    width: 635px;
+    min-width: 260px;
+    background-color: #fff;    
+    border-radius: 25px;
+    margin: 40px 0;
+}
+.login-group{
+    display: block;
+    flex-wrap: wrap;
     justify-content: center;
-    box-shadow: 0px 0px 15px rgba(41, 98, 155, 0.2);    
-}
-.login-left{
-    width: 55%;    
-    height: 65vh;
-    background-image: url("../img/Eip-iot.jpg"); 
-    background-size: cover;
-    background-position: center;
-}
-.login-right{
-    width: calc(45% - 140px);
-    min-width: 305px;
+    padding: 80px 140px;
     text-align: center;
-    padding: 0px 70px;
+    
 }
 .login-top{    
     justify-content: center;
@@ -64,14 +56,13 @@ a:hover{
     
 }
 .login-bot{
-    width: 100%;    
-    margin-top: 30px; 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;   
+    margin-top: 30px;
+    justify-content: center;
 }
 input{
-    width: 100%;
+    width: 300px;
     height: 30px;
     outline: 0;
     border-width: 0 0 2px;
@@ -80,58 +71,37 @@ input{
     margin-bottom: 10px;
 }
 input:focus {
-    border-color: #85CAE5;
+    border-color: #92A3D3;
     transition: 0.5s;
 }
-.btn-group{
-    width: 316px;
-}
 .btn{
-    width: calc(50% - 7.5px);    
+    width: 300px;
     height: 40px;
-    background-color: #29629b;
-    border-radius: 5px;    
+    background-color: #000;
+    border-radius: 30px;    
     font-size: 16px;
     line-height: 40px;
     color: #fff;
     font-weight: normal;
     margin: 24px 0 15px 0;
-    border: none;
-    float: left;
-    
 }
 .btn:hover{
-    background-color: #2EA4DD;
+    background-color: #6779B4;
     transition: 0.3s;
 }
-.btn-forget{
-    width: calc(50% - 7.5px);   
-    height: 40px;
-    background-color: #cae7fc;
-    border-radius: 5px;    
-    font-size: 16px;
-    line-height: 40px;
-    color: #29629b;
-    font-weight: normal;
-    margin: 24px 0 15px 0;
-    border: none;
-    float: right;
-}
-.btn-forget:hover{
-    background-color: #2EA4DD;
-    color: #fff;
-    transition: 0.3s;    
-}
-.clear-float{
-    clear: both;
+.forget{
+    width: 100%;
+    text-align: right;
+    margin-right: 30px;
 }
 .footer{
     width: 100%;
-    min-width: 320px;
+    min-width: 260px;
     padding: 15px 0;
+    background-color: #727171;
 }
-.footer p{    
-    color: #727171;
+.footer p{
+    color: #fff;
     font-weight: 200;
     letter-spacing: 1px;
     text-align: center;
