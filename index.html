@@ -4,77 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Flow Login</title>
+    <title>Eip Login</title>
 
-    <link rel="stylesheet" href="css/smart-flow.css">
+    <link rel="stylesheet" href="css/eip.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 
-    <style>
+    <style>        
         @media(max-width:768px) {
+            h3 {
+                font-size: 24px;
+            }
+
+            body {
+                align-items: flex-start;
+            }
+
+            .login-body {
+                flex-wrap: wrap;
+                margin-top: unset;                
+            } 
+
+            .login-left {
+                width: 100%;
+                height: 230px;
+            }
+
+            .login-right {
+                width: 42%;
+                padding: 120px 0px;
+                min-width: unset;
+            }
+
             .footer-p-M {
                 display: block;
             }
         }
 
-        @media(max-width:568px) {
-            h3 {
-                font-size: 24px;
+        @media(max-width:568px) {            
+            .login-left {
+                height: 150px;
             }
-
-            .login-body {
-                width: 80%
+            
+            .login-right {
+                width: 70%;
+                padding: 80px 0px;
             }
-
-            .login-group {
-                padding: 100px 40px;
+            .footer{
+                padding: 30px 0;
             }
-
+        }
+       
+        @media(max-width:375px){
             .btn {
-                width: 220px;
+                width: 100%;
+                margin: 24px 0 0 0;
             }
-
-            .forget {
-                margin-right: unset;
+            .btn-forget{
+                width: 100%;
             }
-
         }
 
         @media(max-width:320px) {
+            .login-left {
+                height: 110px;
+            }
+            .login-right {
+                width: 75%;
+                padding: 65px 0px;
+            }
             h3 {
                 font-size: 22px;
+                margin: 15px 0 40px 0;
             }
-
-            .login-group {
-                padding: 50px 30px;
-            }
-
-            .btn {
-                width: 200px;
-            }
-
         }
     </style>
 </head>
 
 <body>
     <div class="login-body">
-        <div class="login-group">
+        <div class="login-left"></div>
+        <div class="login-right">
             <div class="login-top">
                 <img src="img/logo.png" alt="" class="logo">
-                <h3>電子表單系統</h3>
+                <h3>EIP入口整合平台</h3>
             </div>
             <div class="login-bot">
                 <input type="text" placeholder="帳號" id="account">
                 <input type="text" placeholder="密碼" id="password">
-                <a href="">
-                    <div class="btn">登入</div>
-                </a>
-                <div class="forget">
-                    <a href="">忘記密碼？</a>
-                </div>
+                <div class="btn-group">
+                    <a href="">
+                        <div class="btn">登入</div>
+                    </a>
+                    <a href="">
+                        <div class="btn-forget">忘記密碼？</div>
+                    </a>
+                    <div class="clear-float"></div>
+                </div>                
             </div>
         </div>
-
     </div>
     <div class="footer">
         <p class="footer-p-L">
